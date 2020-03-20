@@ -22,13 +22,13 @@ class _SearchBarState extends State<SearchBar> {
           child: AnimatedContainer(
               duration: Duration(milliseconds: 600),
               curve: Curves.easeIn,
-              margin: EdgeInsets.only(top: 15.0),
+              margin: EdgeInsets.only(top: 20.0),
               padding: EdgeInsets.only(left: 8.0),
               height: 40.0,
               width: _animate ? _maxWidth * 0.75: _maxWidth,
               decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   boxShadow: [
                     BoxShadow(color: Colors.grey, blurRadius: 2.0, spreadRadius: 1.0)
                   ]
@@ -45,7 +45,7 @@ class _SearchBarState extends State<SearchBar> {
                   controller: _controller,
                   onSubmitted: (text){
                     setState(() {
-                      if(text != null){
+                      if(text != null && text != ""){
                         _animate = !_animate;
                       }
                     });
@@ -58,6 +58,7 @@ class _SearchBarState extends State<SearchBar> {
           onTap: (){
             setState(() {
               _animate = !_animate;
+              _controller.clear();
             });
           },
           child: AnimatedOpacity(
@@ -67,12 +68,12 @@ class _SearchBarState extends State<SearchBar> {
             child: AnimatedContainer(
               padding: EdgeInsets.only(top: 5.0),
               duration: Duration(milliseconds: 300),
-              width:
-              _animate ? _maxWidth * .2 : 0,
+              width: _animate ? _maxWidth * .22 : 0,
               child: Container(
-                  padding: EdgeInsets.only(top: 20.0, left: 15.0),
+                  height: 60.0,
+                  padding: EdgeInsets.only(top: 25.0, left: 15.0),
                   color: Colors.transparent,
-                  child: Text("Cancel", style: TextStyle(fontSize: 16.0),)
+                  child: Text("Cancelar", style: TextStyle(fontSize: 16.0),)
               ),
             ),
           ),
