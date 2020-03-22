@@ -1,9 +1,12 @@
+import 'package:collegesnacks/Screens/FavoritesScreen.dart';
 import 'package:collegesnacks/Screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
+import 'Screens/PromotionsScreen.dart';
+
 void main() => runApp(MyApp());
 
-PageController pageController = new PageController();
+PageController _pageController = new PageController();
 
 class MyApp extends StatelessWidget {
   @override
@@ -15,10 +18,12 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: PageView(
-        controller: pageController,
+        controller: _pageController,
         physics: NeverScrollableScrollPhysics(),
         children: <Widget>[
-          HomeScreen(pageController)
+          HomeScreen(_pageController),
+          FavoritesScreen(_pageController),
+          PromotionsScreen(_pageController),
         ],
       )
     );
