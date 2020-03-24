@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "817853250246",
+    "firebase_url": "https://collegesnackshd.firebaseio.com",
+    "project_id": "collegesnackshd",
+    "storage_bucket": "collegesnackshd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817853250246:android:00987d61609469eea6b5c7",
+        "android_client_info": {
+          "package_name": "com.hd.collegesnacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817853250246-gj896ei68apoedtlibe3iiovb4j51h2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hd.collegesnacks",
+            "certificate_hash": "9234be78f7bb5c5ddc27310ab9fa21fe26068354"
+          }
+        },
+        {
+          "client_id": "817853250246-0pv37te5tgnl432i1idsvs9u5s6k9fv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDfLYpnCzhHeYmrl2xEPpvKno1vp1fnXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817853250246-0pv37te5tgnl432i1idsvs9u5s6k9fv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
