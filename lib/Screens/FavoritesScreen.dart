@@ -1,6 +1,4 @@
-import 'dart:convert';
 import 'dart:math';
-
 import 'package:collegesnacks/Datas/EstablishmentData.dart';
 import 'package:collegesnacks/Utils/getEstablishment.dart';
 import 'package:flutter/material.dart';
